@@ -9,7 +9,7 @@ const util = require('util');
 require('dotenv').config();
 
 const products = new Product();
-const category = new Category();
+
 
 
 mongoose.connect(process.env.MONGOOSE_URI, {
@@ -24,9 +24,7 @@ const productRecord = {
   amount: 23,
 };
 
-const categoryRecord = {
 
-};
 
 products
   .create(productRecord)
