@@ -6,7 +6,7 @@ const Product = require('../models/productModel');
 const Category = require('../models/categoryModel');
 
 const productModel = new Product();
-const categoryModel = new Category();
+
 
 describe('Model CRUD methods', () => {
   it('productModel can create() a record', async () => {
