@@ -15,7 +15,7 @@ const category = new Category();
 mongoose.connect(process.env.MONGOOSE_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-  useFindAndModify: false
+  useFindAndModify: false,
 });
 
 

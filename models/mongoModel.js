@@ -44,7 +44,9 @@ class Model {
    * @returns {function}
    */
   update(_id, record) {
+   
     if (_id && record) {
+      console.log('hit schema');
       return this.schema.findByIdAndUpdate(_id, record, { new: true });
     } else {
       return undefined;
